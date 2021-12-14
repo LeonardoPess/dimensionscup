@@ -37,10 +37,6 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  html, body {
-    height: 100%;
-  }
-
   body {
     color: var(--white);
     background: var(--blue-900);
@@ -67,4 +63,25 @@ export const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
   }
+
+  // SCROLLBAR
+
+  ::-webkit-scrollbar-track
+{
+	border-radius: 30px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 30px;
+	background-color: var(--purple-300);
+}
+
 `

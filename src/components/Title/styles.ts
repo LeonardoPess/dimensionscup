@@ -8,6 +8,8 @@ export const Container = styled.h1`
   font-family: 'Bitter', serif;
 
   img {
+    height: 50px;
+
     margin-right: 1rem;
   }
 `;

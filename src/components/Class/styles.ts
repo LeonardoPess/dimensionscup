@@ -5,15 +5,6 @@ export const Container = styled.aside`
 
   margin: 0 auto;
 
-  a {
-    display: block;
-    transition: .2s;
-
-    &:hover {
-      filter: brightness(.8);
-    }
-  }
-
   .classWrapper {
     width:100%;
 

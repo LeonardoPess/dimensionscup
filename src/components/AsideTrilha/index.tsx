@@ -4,6 +4,7 @@ import skullIcon from '../../assets/icons/skull.svg';
 
 import { Container } from './styles';
 import { Button } from '../Button';
+import { Score } from '../Score';
 
 interface AsideTrilhaProps {
   curso: boolean;
@@ -21,8 +22,8 @@ export function AsideTrilha({ curso }: AsideTrilhaProps) {
       <p>Desafios de conclusão: <span>3 de 11</span></p>
       <p>Premio de conclusão:
         <div>
-          <span className="xpRound">21 <img src={lightningIcon} alt="Raio" /></span>
-          <span className="xpRound">65 <img src={shieldIcon} alt="Escudo" /></span>
+          <Score score={21} icon={lightningIcon} size={40}/>
+          <Score score={65} icon={shieldIcon} size={40}/>
         </div>
       </p>
       <Button text={curso ? 'DESAFIO DA TRILHA' : 'DESAFIO DO CURSO'} color="#3A337C" icon={skullIcon}/>

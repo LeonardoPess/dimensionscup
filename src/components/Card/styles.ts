@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface Props {
-  colorHover: any;
+  colorHover: string;
 }
 
 export const Container = styled.div<Props>`

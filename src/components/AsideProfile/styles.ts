@@ -6,14 +6,38 @@ export const Container = styled.aside`
   background: var(--blue-500);
   border-radius: 10px;
 
-  > h1 {
-    text-align: center;
-    font-family: 'Bitter', serif;
-    font-size: 2rem;
-    color: white;
+  .profileTop {
+    .userRounded {
+      width: 200px;
+      height: 200px;
+
+      margin: 0 auto;
+
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    h1 {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-family: 'Bitter', serif;
+    }
+
+    span {
+      display: block;
+
+      font-weight: bold;
+      text-align: center;
+    }
   }
 
-  button:not(:last-child) {
+  button:first-of-type {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  button:not(:first-of-type) {
     width: 100%;
 
     margin-top: 1rem;
@@ -39,10 +63,5 @@ export const Container = styled.aside`
     justify-content: space-between;
 
     color: var(--gray-500);
-  }
-
-  button:last-child {
-    margin: 0 auto;
-    margin-top: 2rem;
   }
 `;

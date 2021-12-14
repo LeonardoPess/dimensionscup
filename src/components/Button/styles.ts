@@ -21,6 +21,8 @@ export const Container = styled.button`
   }
 
   img {
+    height: 40px;
+
     margin-left: 1rem;
   }
 `;

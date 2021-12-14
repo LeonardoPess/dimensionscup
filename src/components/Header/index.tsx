@@ -1,6 +1,6 @@
 import homeIcon from '../../assets/icons/plataform.svg';
 import wandIcon from '../../assets/icons/wand.svg';
-import userPhotoIcon from '../../assets/images/userPhoto.png';
+import userPhotoIcon from '../../assets/images/userPhoto.jpg';
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -28,7 +28,7 @@ export function Header() {
         <ul>
           <li><Link to="/escola">Hogwarts</Link></li>
           <li><Link to="/time">Gryffindor</Link></li>
-          <li><Link to="/disputa">Duelos</Link></li>
+          <li><Link to="/disputas">Duelos</Link></li>
           <li><Link to="/notificacoes">Empório de Corujas</Link></li>
         </ul>
 
