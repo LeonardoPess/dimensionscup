@@ -1,6 +1,6 @@
 import hatIcon from '../../assets/icons/hat.svg';
-import { AsideTrilha } from '../../components/AsideTrilha';
-import { Course } from '../../components/Course';
+import { Aside } from '../../components/Trilha/Aside';
+import { Course } from '../../components/Trilha/Course';
 
 import { Title } from '../../components/Title';
 
@@ -12,7 +12,7 @@ export function Reactjs() {
       <Title text="REACTJS" icon={hatIcon} />
 
       <main>
-        <AsideTrilha curso={true}/>
+        <Aside curso={true}/>
         <Course/>
       </main>
     </Container>

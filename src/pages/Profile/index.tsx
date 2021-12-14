@@ -1,8 +1,10 @@
 import hatIcon from '../../assets/icons/hat.svg';
 
-import { AsideProfile } from '../../components/AsideProfile';
-import { Class } from '../../components/Class';
+import { AsideProfile } from '../../components/Profile/AsideProfile';
 import { Title } from '../../components/Title';
+import { About } from '../../components/Profile/About';
+import { Portfolio } from '../../components/Profile/Portfolio';
+import { Interests } from '../../components/Profile/Interests';
 
 import { Container } from "./styles";
 
@@ -13,7 +15,11 @@ export function Profile() {
 
       <main>
         <AsideProfile />
-        <Class/>
+        <div>
+          <About />
+          <Portfolio />
+          <Interests />
+        </div>
       </main>
     </Container>
   );

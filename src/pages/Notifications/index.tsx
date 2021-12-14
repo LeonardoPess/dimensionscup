@@ -4,6 +4,7 @@ import skullIcon from '../../assets/icons/skull.svg';
 import arrowRoundLeftIcon from '../../assets/icons/arrowRoundLeft.svg';
 import arrowRoundRightIcon from '../../assets/icons/arrowRoundRight.svg';
 import letterImg from '../../assets/images/backgroundLetters.png';
+
 import { Button } from '../../components/Button';
 
 import { Container } from "./styles";

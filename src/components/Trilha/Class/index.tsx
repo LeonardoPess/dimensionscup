@@ -1,10 +1,8 @@
-import skullIcon from '../../assets/icons/skull.svg';
-import hatIcon from '../../assets/icons/hat.svg';
-
-import { Link } from 'react-router-dom';
+import skullIcon from '../../../assets/icons/skull.svg';
+import hatIcon from '../../../assets/icons/hat.svg';
 
 import { Container } from './styles';
-import { Button } from '../Button';
+import { Button } from '../../Button';
 
 export function Class() {
   return (

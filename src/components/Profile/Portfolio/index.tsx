@@ -1,17 +1,19 @@
-import hatIcon from '../../assets/icons/hat.svg';
-import categoryOneImg from '../../assets/images/categoryOne.png';
+import categoryOneImg from '../../../assets/images/categoryOne.png';
+import arrowRoundLeftIcon from '../../../assets/icons/arrowRoundLeft.svg';
+import arrowRoundRightIcon from '../../../assets/icons/arrowRoundRight.svg';
 
-import { Card } from '../../components/Card';
-import { Title } from '../../components/Title';
+import { Card } from '../../../components/Card';
 
-import { Container } from "./styles";
+import { Container } from './styles';
 
-export function Trilha() {
+export function Portfolio() {
   return (
     <Container>
-      <Title text="ESCOLHA O TIPO DE MAGIA" icon={hatIcon} />
+      <h1>PORTFÓLIO</h1>
 
       <div className="cardWrapper">
+        <img src={arrowRoundLeftIcon} alt="Arrow left" />
+
         <Card
           cardUrl="/trilha/frontend"
           title="FRONTEND"
@@ -33,12 +35,7 @@ export function Trilha() {
           colorHover="#670606"
         />
 
-        <Card
-          cardUrl="/trilha/frontend"
-          title="FRONTEND"
-          image={categoryOneImg}
-          colorHover="#10141B"
-        />
+        <img src={arrowRoundRightIcon} alt="Arrow left" />
       </div>
     </Container>
   );

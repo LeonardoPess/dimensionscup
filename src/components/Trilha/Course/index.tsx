@@ -1,11 +1,11 @@
-import skullIcon from '../../assets/icons/skull.svg';
-import hatIcon from '../../assets/icons/hat.svg';
-import classImg from '../../assets/images/class.png';
+import skullIcon from '../../../assets/icons/skull.svg';
+import hatIcon from '../../../assets/icons/hat.svg';
+import classImg from '../../../assets/images/class.png';
 
 import { Link } from 'react-router-dom';
 
 import { Container } from './styles';
-import { Button } from '../Button';
+import { Button } from '../../Button';
 
 export function Course() {
   return (

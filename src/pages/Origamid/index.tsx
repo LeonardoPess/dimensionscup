@@ -1,7 +1,7 @@
 import hatIcon from '../../assets/icons/hat.svg';
 
-import { AsideTrilha } from '../../components/AsideTrilha';
-import { Class } from '../../components/Class';
+import { Aside } from '../../components/Trilha/Aside';
+import { Class } from '../../components/Trilha/Class';
 
 import { Title } from '../../components/Title';
 
@@ -13,7 +13,7 @@ export function Origamid() {
       <Title text="REACTJS" icon={hatIcon} />
 
       <main>
-        <AsideTrilha curso={false}/>
+        <Aside curso={false}/>
         <Class/>
       </main>
     </Container>

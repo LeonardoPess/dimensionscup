@@ -1,16 +1,16 @@
-import shieldIcon from '../../assets/icons/shield.svg';
-import lightningIcon from '../../assets/icons/lightning.svg';
-import skullIcon from '../../assets/icons/skull.svg';
+import shieldIcon from '../../../assets/icons/shield.svg';
+import lightningIcon from '../../../assets/icons/lightning.svg';
+import skullIcon from '../../../assets/icons/skull.svg';
 
 import { Container } from './styles';
-import { Button } from '../Button';
-import { Score } from '../Score';
+import { Button } from '../../Button';
+import { Score } from '../../Score';
 
-interface AsideTrilhaProps {
+interface AsideProps {
   curso: boolean;
 }
 
-export function AsideTrilha({ curso }: AsideTrilhaProps) {
+export function Aside({ curso }: AsideProps) {
   return (
     <Container>
       <h1>Detalhes da jornada</h1>

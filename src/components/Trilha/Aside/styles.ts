@@ -6,43 +6,20 @@ export const Container = styled.aside`
   background: var(--blue-500);
   border-radius: 10px;
 
-  .profileTop {
-    .userRounded {
-      width: 200px;
-      height: 200px;
-
-      margin: 0 auto;
-
-      overflow: hidden;
-      border-radius: 50%;
-    }
-
-    h1 {
-      margin-top: 1rem;
-      text-align: center;
-      font-size: 2rem;
-      font-family: 'Bitter', serif;
-    }
-
-    span {
-      display: block;
-
-      font-weight: bold;
-      text-align: center;
-    }
+  > h1 {
+    text-align: center;
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+    color: white;
   }
 
-  button:first-of-type {
-    margin: 0 auto;
-    margin-top: 2rem;
-  }
-
-  button:not(:first-of-type) {
+  button:not(:last-child) {
     width: 100%;
 
     margin-top: 1rem;
     padding: 1rem;
 
+    text-align: left;
     color: white;
     background: var(--blue-900);
     border: 0;
@@ -63,5 +40,10 @@ export const Container = styled.aside`
     justify-content: space-between;
 
     color: var(--gray-500);
+  }
+
+  button:last-child {
+    margin: 0 auto;
+    margin-top: 2rem;
   }
 `;
