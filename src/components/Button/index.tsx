@@ -3,7 +3,7 @@ import { Container } from './styles';
 interface ButtonProps {
   text: string;
   color: string;
-  icon: string;
+  icon?: string;
 }
 
 export function Button({ text, color, icon }: ButtonProps) {

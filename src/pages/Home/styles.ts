@@ -27,6 +27,7 @@ export const Welcome = styled.section`
     }
 
     button {
+      margin: 0 auto;
       margin-top: 3rem;
     }
   }
