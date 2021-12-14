@@ -29,7 +29,7 @@ export function Header() {
           <li><Link to="/escola">Hogwarts</Link></li>
           <li><Link to="/time">Gryffindor</Link></li>
           <li><Link to="/disputa">Duelos</Link></li>
-          <li><Link to="/notificações">Empório de Corujas</Link></li>
+          <li><Link to="/notificacoes">Empório de Corujas</Link></li>
         </ul>
 
         <Link to="/perfil">

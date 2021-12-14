@@ -1,13 +1,14 @@
 import hatIcon from '../../assets/icons/hat.svg';
 import categoryOneImg from '../../assets/images/categoryOne.png';
 import { Card } from '../../components/Card';
+import { Title } from '../../components/Title';
 
 import { Container } from "./styles";
 
 export function Trilha() {
   return (
     <Container>
-      <h1><img src={hatIcon} alt="Hat" /> ESCOLHA O TIPO DE MAGIA</h1>
+      <Title text="ESCOLHA O TIPO DE MAGIA" icon={hatIcon} />
 
       <div className="cardWrapper">
         <Card
