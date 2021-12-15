@@ -5,9 +5,10 @@ import { Title } from '../../components/Title';
 import { About } from '../../components/Profile/About';
 import { Portfolio } from '../../components/Profile/Portfolio';
 import { Interests } from '../../components/Profile/Interests';
+import { Technology } from '../../components/Profile/Technology';
+import { Activities } from '../../components/Profile/Activities';
 
 import { Container } from "./styles";
-import { Technology } from '../../components/Profile/Technology';
 
 export function Profile() {
   return (
@@ -21,6 +22,7 @@ export function Profile() {
           <Portfolio />
           <Technology />
           <Interests />
+          <Activities />
         </div>
       </main>
     </Container>
