@@ -27,8 +27,8 @@ export function AsideProfile() {
       <p>Acreditações<span>1 de 11</span></p>
       <p>Experiencia adquirida:
         <div>
-          <Score score={210} icon={lightningIcon} size={50}/>
-          <Score score={477} icon={shieldIcon} size={50}/>
+          <Score score={68} icon={lightningIcon} size={50}/>
+          <Score score={68} icon={shieldIcon} size={50}/>
         </div>
       </p>
 

@@ -43,7 +43,7 @@ export function School() {
         title="IR PARA A SALA PRECISA"
         text="É uma sala em que uma pessoa só poder entrar quando tiver uma real necessidade dela. Algumas vezes está lá, e algumas vezes não está, mas quando aparece, sempre estará equipada com o necessário para o bruxo"
         image={forumImg}
-        textButton="ACOMPANHAR DUELOS"
+        textButton="SALA PRECISA"
         iconButton={skullIcon}
         left={true}
       />

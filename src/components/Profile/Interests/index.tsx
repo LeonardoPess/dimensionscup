@@ -1,6 +1,4 @@
 import reactIcon from '../../../assets/icons/react.svg';
-import arrowRoundLeftIcon from '../../../assets/icons/arrowRoundLeft.svg';
-import arrowRoundRightIcon from '../../../assets/icons/arrowRoundRight.svg';
 
 import { Card } from '../Card';
 
@@ -12,7 +10,6 @@ export function Interests() {
       <h1>INTERESSES</h1>
 
       <div className="cardWrapper">
-        <img src={arrowRoundLeftIcon} alt="Arrow left" />
 
         <Card>
           <img src={reactIcon} alt="tech" />
@@ -32,7 +29,6 @@ export function Interests() {
           <p><b>Conhecimento prévio: </b>Básico</p>
         </Card>
 
-        <img src={arrowRoundRightIcon} alt="Arrow left" />
       </div>
     </Container>
   );

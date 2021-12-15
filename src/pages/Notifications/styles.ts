@@ -11,13 +11,10 @@ export const Container = styled.section`
 
   background-size: cover;
 
-  > img {
-    cursor: pointer;
-    filter: invert(50%) sepia(22%) saturate(1806%) hue-rotate(348deg) brightness(95%) contrast(91%);
-  }
-
   > div {
-    max-width: 60%;
+    max-width: 1000px;
+
+    position: relative;
     padding: 2rem;
     margin: 0 2rem;
 
@@ -25,9 +22,33 @@ export const Container = styled.section`
     border-top: 8px solid var(--brown-500);
     background: var(--brown-100);
 
+    > img {
+    position: absolute;
+    top: -4rem;
+
+    cursor: pointer;
+    filter: invert(50%) sepia(22%) saturate(1806%) hue-rotate(348deg) brightness(95%) contrast(91%);
+
+    &:first-of-type {
+      left: 0;
+    }
+
+    &:last-of-type {
+      right: 0;
+    }
+  }
+
     h1 {
       color: var(--brown-700);
       font-size: 3rem;
+
+      @media (max-width: 1024px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
@@ -45,18 +66,15 @@ export const Container = styled.section`
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
 
       button {
-        margin-top: 2rem;
+        margin: 2rem 1rem 0;
 
         font-size: 1rem;
 
         img {
           max-height: 30px;
-        }
-
-        & + button {
-          margin-left: 2rem;
         }
       }
     }

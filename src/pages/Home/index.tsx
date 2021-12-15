@@ -44,7 +44,7 @@ export function Home() {
 
       <CallToActionBox
         callActionUrl="/"
-        title="VEJA OS DUELOS E TORNEIOS MAIS FAMOSOS"
+        title="VEJA OS DUELOS MAIS FAMOSOS"
         image={castleImg}
         textButton="ACOMPANHAR DUELOS"
         iconButton={skullIcon}

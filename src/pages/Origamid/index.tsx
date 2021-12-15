@@ -10,7 +10,7 @@ import { Container } from "./styles";
 export function Origamid() {
   return (
     <Container>
-      <Title text="REACTJS" icon={hatIcon} />
+      <Title text="ORIGAMID" icon={hatIcon} />
 
       <main>
         <Aside curso={false}/>

@@ -4,6 +4,7 @@ export const Welcome = styled.section`
   padding: 12rem 0;
 
   background-size: cover;
+  background-position: center;
 
   .container {
     max-width:1280px;
@@ -16,6 +17,14 @@ export const Welcome = styled.section`
 
     h1 {
       font-size: 4rem;
+
+      @media (max-width: 768px) {
+        font-size: 3rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 2rem;
+      }
     }
 
     p {
@@ -24,6 +33,14 @@ export const Welcome = styled.section`
       margin-top: 2rem;
 
       font-size: 2rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 1rem;
+      }
     }
 
     button {
@@ -46,6 +63,14 @@ export const LastestNews = styled.section`
 
   > h1 {
     font-size: 4rem;
+
+    @media (max-width: 768px) {
+        font-size: 3rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 2rem;
+      }
   }
 
   .newsWrapper {
@@ -56,14 +81,28 @@ export const LastestNews = styled.section`
     flex-wrap: wrap;
 
     div {
-      height: 300px;
+      max-width: 400px;
       width: 40%;
+      height: 300px;
 
       position: relative;
       display: flex;
+      flex-wrap: wrap;
 
       cursor: pointer;
       border: 1px solid var(--gray-500);
+
+      @media (max-width: 768px) {
+        width: 100%;
+
+        margin: 0 1rem;
+      }
+
+      & + div {
+        @media (max-width: 768px) {
+          margin-top: 2rem;
+        }
+      }
 
       &:hover > img {
         width: 120%;

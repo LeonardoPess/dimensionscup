@@ -8,12 +8,14 @@ export const Container = styled.div`
   align-items: center;
 
   &.left {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 
     div {
-      width: 40%;
-      position: relative;
       right: 10%;
+
+      @media (max-width: 768px) {
+        right: 20%;
+      }
 
       h1 {
         text-align: left;
@@ -25,8 +27,10 @@ export const Container = styled.div`
     div {
       left: 10%;
 
-      h1{
-        text-align: right;
+      text-align: right;
+
+      @media (max-width: 768px) {
+        left: 20%;
       }
 
       button {
@@ -35,16 +39,30 @@ export const Container = styled.div`
     }
   }
 
-  div {
+  .textWrapper {
     width: 40%;
+
     position: relative;
+
+    @media (max-width: 768px) {
+      width: 60%;
+    }
 
     h1 {
       font-size: 3rem;
       font-family: 'Bitter', serif;
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 650px) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
+      margin-top: 1rem;
       line-height: 1.5rem;
     }
 
@@ -53,7 +71,11 @@ export const Container = styled.div`
     }
   }
 
-  > img {
+  .backgroundImage {
     width: 60%;
+    min-height: 400px;
+
+    background-size: cover;
+    background-position: center;
   }
 `;

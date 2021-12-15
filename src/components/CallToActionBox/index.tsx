@@ -18,14 +18,14 @@ interface CallToActionBoxProps {
 export function CallToActionBox({ callActionUrl, title, text, textButton, colorButton, iconButton, image, left }: CallToActionBoxProps) {
   return (
     <Container className={left ? 'left' : 'right'}>
-      <div>
+      <div className="textWrapper">
         <h1>{title}</h1>
         <p>{text}</p>
         <Link to={callActionUrl}>
           <Button text={textButton} color={colorButton ? colorButton : '#3A337C'} icon={iconButton} />
         </Link>
       </div>
-      <img src={image} alt="text" />
+      <div className="backgroundImage" style={{backgroundImage: `url(${image})`}}></div>
     </Container>
   );
 }

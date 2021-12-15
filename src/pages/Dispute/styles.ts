@@ -12,7 +12,7 @@ export const Container = styled.section`
 
   > div {
     min-height: calc(100vh - 95px);
-    min-width: 600px;
+    min-width: 50%;
     max-width: 35%;
 
     margin-left: 8rem;
@@ -26,12 +26,32 @@ export const Container = styled.section`
     border-top: 8px solid var(--brown-500);
     background: var(--brown-700);
 
+    @media (max-width: 800px) {
+      min-width: 60%;
+    }
+
+    @media (max-width: 600px) {
+      min-width: 80%;
+
+      margin: 0 auto;
+    }
+
+    @media (max-width: 500px) {
+      min-width: 90%;
+
+      margin: 0 auto;
+    }
+
     p {
       margin-top: 1.5rem;
 
       font-weight: bold;
       font-size: 2rem;
       font-family: 'Bitter', serif;
+
+      @media (max-width: 800px) {
+        font-size: 1.5rem;
+      }
     }
 
     select {
@@ -49,7 +69,6 @@ export const Container = styled.section`
       cursor: pointer;
 
       option {
-        margin: 40px;
         background: var(--brown-700);
         color: #fff;
         font-weight: bold;

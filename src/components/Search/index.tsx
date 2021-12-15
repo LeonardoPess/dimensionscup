@@ -2,7 +2,7 @@ import searchIcon from '../../assets/icons/search.svg';
 
 import { Container } from './styles';
 
-export function Input() {
+export function Search() {
   return (
     <Container>
       <label htmlFor="search"><img src={searchIcon} alt="Search" /></label>

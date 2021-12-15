@@ -5,6 +5,7 @@ export const Container = styled.div`
   min-height: 220px;
 
   padding: 1.5rem 1rem;
+  margin: 1rem;
 
   background: var(--blue-900);
   border-radius: 10px;
@@ -16,8 +17,8 @@ export const Container = styled.div`
     filter: brightness(.9);
   }
 
-  & + div {
-    margin-left: 2rem;
+  @media (max-width: 768px) {
+    min-width: initial;
   }
 
   p {

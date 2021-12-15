@@ -25,4 +25,12 @@ export const Container = styled.button`
 
     margin-left: 1rem;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+
+    img {
+      height: 25px;
+    }
+  }
 `;

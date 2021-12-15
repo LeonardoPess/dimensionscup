@@ -39,6 +39,10 @@ export const Container = styled.aside`
     font-family: 'Bitter', serif;
     font-size: 3rem;
     text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
   p {
@@ -62,6 +66,7 @@ export const Container = styled.aside`
     flex-wrap: wrap;
 
     button {
+      margin: 0 auto;
       margin-top: 2rem;
 
       font-size: 1rem;

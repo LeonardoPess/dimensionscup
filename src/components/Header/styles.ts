@@ -27,8 +27,34 @@ export const Container = styled.header`
     align-items: center;
     justify-content: space-between;
 
-    ul {
+    .logoWrapper {
+      @media(max-width: 900px) {
+        display: none;
+      }
+    }
+
+    .menuMobileIcon {
+      display: none;
+      padding: 1rem;
+      z-index: 1;
+
+      cursor: pointer;
+
+      @media(max-width: 900px) {
+        display: block;
+      }
+
+      img {
+        color: white;
+      }
+    }
+
+    .menuDesktop {
       display: flex;
+
+      @media(max-width: 900px) {
+        display: none;
+      }
 
       li {
         transition: .2s;
@@ -45,6 +71,7 @@ export const Container = styled.header`
     .profile {
       display: flex;
       align-items: center;
+      z-index: 1;
 
       cursor:pointer;
       transition: .2s;

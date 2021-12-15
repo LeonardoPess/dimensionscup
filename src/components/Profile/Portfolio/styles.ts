@@ -8,7 +8,10 @@ export const Container = styled.section`
   background: var(--blue-500);
   border-radius: 10px;
 
-  h1 {
+  > h1 {
+    margin-bottom: 1rem;
+
+    text-align: center;
     font-size: 2rem;
     font-family: 'Bitter', serif;
   }
@@ -17,6 +20,7 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
     img {
       margin: 0 1rem;
@@ -25,11 +29,7 @@ export const Container = styled.section`
     }
 
     > a {
-      margin-top: 2rem;
-
-        & + a {
-          margin-left: 2rem;
-        }
+      margin: 1rem;
     }
   }
 `;

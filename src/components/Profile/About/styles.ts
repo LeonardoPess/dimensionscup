@@ -8,9 +8,10 @@ export const Container = styled.section`
   background: var(--blue-500);
   border-radius: 10px;
 
-  h1 {
+  > h1 {
     font-size: 2rem;
     font-family: 'Bitter', serif;
+    text-align: center;
   }
 
   p {
@@ -21,15 +22,12 @@ export const Container = styled.section`
 
   .buttonsWrapper {
     display: flex;
+    flex-wrap: wrap;
 
     button {
-      margin-top: 1.5rem;
+      margin: 1rem .5rem;
 
       font-size: 1rem;
-
-      & + button {
-        margin-left: 1.5rem;
-      }
 
       img {
         height: 30px;

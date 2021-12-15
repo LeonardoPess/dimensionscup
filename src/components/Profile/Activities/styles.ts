@@ -8,9 +8,10 @@ export const Container = styled.section`
   background: var(--blue-500);
   border-radius: 10px;
 
-  h1 {
+  > h1 {
     font-size: 2rem;
     font-family: 'Bitter', serif;
+    text-align: center;
   }
 
   .cardWrapper {
@@ -18,8 +19,9 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
-    h1 {
+    > h1 {
       font-size: 1.5rem;
       font-family: 'Bitter', serif;
     }

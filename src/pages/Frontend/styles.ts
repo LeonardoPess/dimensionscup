@@ -9,15 +9,7 @@ export const Container = styled.section`
   font-family: 'Bitter', serif;
 
   h1 {
-    display: flex;
-    align-items: center;
     justify-content: center;
-
-    font-size: 3rem;
-
-    img {
-      margin-right: 1rem;
-    }
   }
 
   .cardWrapper {

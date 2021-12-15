@@ -1,6 +1,3 @@
-import arrowRoundLeftIcon from '../../../assets/icons/arrowRoundLeft.svg';
-import arrowRoundRightIcon from '../../../assets/icons/arrowRoundRight.svg';
-
 import { Card } from '../Card';
 
 import { Container } from './styles';
@@ -11,7 +8,6 @@ export function Activities() {
       <h1>ATIVIDADES</h1>
 
       <div className="cardWrapper">
-        <img src={arrowRoundLeftIcon} alt="Arrow left" />
 
         <Card>
           <h1>HOJE</h1>
@@ -29,7 +25,6 @@ export function Activities() {
           <p><b>Pessoas ajudadas: </b>0</p>
         </Card>
 
-        <img src={arrowRoundRightIcon} alt="Arrow left" />
       </div>
     </Container>
   );

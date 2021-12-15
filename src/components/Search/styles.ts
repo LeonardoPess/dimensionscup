@@ -1,16 +1,24 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 400px;
+  width: 300px;
 
   img {
     position: absolute;
     padding: .5rem;
+
+    @media (max-width: 900px) {
+      padding: .4rem;
+    }
   }
 
   input {
     width: 100%;
     height: 60px;
+
+    @media (max-width: 900px) {
+      height: 50px;
+    }
 
     padding: 0 4rem;
 

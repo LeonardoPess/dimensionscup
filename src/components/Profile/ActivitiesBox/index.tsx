@@ -7,14 +7,12 @@ import { Container } from './styles';
 export function ActivitiesBox() {
   return (
     <Container>
-      <div>
-        <h1>AULA CREATE-REACT-APP</h1>
-        <span>das 10:21 às 11:48</span>
-      </div>
+      <h1>AULA CREATE-REACT-APP</h1>
 
-      <p>Aula da Trilha de ReactJS(frontend) e do curso da Rocketseat ensinando s’obre o create-react-app...</p>
+      <p>Aula da Trilha de ReactJS(frontend) e do curso da Rocketseat ensinando sobre o create-react-app...</p>
 
-      <Button text="GitHub" icon={hatIcon}/>
+      <span>das 10:21 às 11:48</span>
+      <Button text="Acessar" icon={hatIcon}/>
     </Container>
   );
 }

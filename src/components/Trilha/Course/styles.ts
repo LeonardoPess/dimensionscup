@@ -39,7 +39,10 @@ export const Container = styled.aside`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
 
     button {
       margin-top: 2rem;
