@@ -20,7 +20,7 @@ export function Course() {
         <span>10/10/2020</span>
       </Link>
       <div className="buttonWrapper">
-        <Button text="DESAFIO DA TRILHA" color="#3A337C" icon={skullIcon}/>
+        <Button text="DESAFIO DO CURSO" color="#3A337C" icon={skullIcon}/>
         <Button text="CONCLUIR" color="#3A337C" icon={hatIcon}/>
       </div>
 

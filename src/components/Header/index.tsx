@@ -36,12 +36,12 @@ export function Header() {
           <div className="profile">
             <img src={wandIcon} alt="Varinha" />
             <div>
-              <span>Leonardo Pessoa</span>
+              <span>HARRY POTTER</span>
               <br />
               <span>Bruxo 1</span>
             </div>
             <div className="userRounded">
-              <img src={userPhotoIcon} alt="Leonardo Pessoa" />
+              <img src={userPhotoIcon} alt="Harry Potter" />
             </div>
           </div>
         </Link>

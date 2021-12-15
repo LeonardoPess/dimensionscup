@@ -19,7 +19,7 @@ export function Class() {
       </div>
 
       <div className="buttonWrapper">
-        <Button text="DESAFIO DA TRILHA" color="#3A337C" icon={skullIcon}/>
+        <Button text="DESAFIO DA AULA" color="#3A337C" icon={skullIcon}/>
         <Button text="CONCLUIR" color="#3A337C" icon={hatIcon}/>
       </div>
 

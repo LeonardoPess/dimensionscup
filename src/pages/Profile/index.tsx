@@ -7,6 +7,7 @@ import { Portfolio } from '../../components/Profile/Portfolio';
 import { Interests } from '../../components/Profile/Interests';
 
 import { Container } from "./styles";
+import { Technology } from '../../components/Profile/Technology';
 
 export function Profile() {
   return (
@@ -18,6 +19,7 @@ export function Profile() {
         <div>
           <About />
           <Portfolio />
+          <Technology />
           <Interests />
         </div>
       </main>
