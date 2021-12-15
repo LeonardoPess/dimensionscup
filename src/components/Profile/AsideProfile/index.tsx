@@ -45,7 +45,7 @@ export function AsideProfile() {
 
       <button>TRILHA ATUAL: ReactJS</button>
       <button>CURSO ATUAL: Rocketseat</button>
-      <Link to="/perfil/cronograma">
+      <Link to="/cronograma">
         <button>CRONOGRAMA</button>
       </Link>
       <p>Início na trilha:<span>12/12/2021</span></p>

@@ -10,7 +10,7 @@ import { Button } from '../../Button';
 export function Course() {
   return (
     <Container>
-      <Link to="/trilha/frontend/reactjs/origamid">
+      <Link to="/origamid">
         <img src={classImg} alt="Curso" />
         <h1>ORIGAMID</h1>
         <p>Neste curso você irá aprender a como utilizar o React do zero para o desenvolvimento de aplicações web reativas.</p>

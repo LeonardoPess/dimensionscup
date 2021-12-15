@@ -13,84 +13,84 @@ export function Frontend() {
 
       <div className="cardWrapper">
         <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#292265"
         />
 
         <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#6D66AD"
         />
 
       <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#670606"
         />
 
         <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#10141B"
         />
 
         <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#292265"
         />
 
         <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#6D66AD"
         />
 
       <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#670606"
         />
 
         <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#10141B"
         />
 
 <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#292265"
         />
 
         <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#6D66AD"
         />
 
       <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#670606"
         />
 
         <Card
-          cardUrl="/trilha/frontend/reactjs"
+          cardUrl="/reactjs"
           title="REACTJS"
           image={categoryOneImg}
           colorHover="#10141B"

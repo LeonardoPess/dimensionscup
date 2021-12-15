@@ -13,28 +13,28 @@ export function Trilha() {
 
       <div className="cardWrapper">
         <Card
-          cardUrl="/trilha/frontend"
+          cardUrl="/frontend"
           title="FRONTEND"
           image={categoryOneImg}
           colorHover="#292265"
         />
 
         <Card
-          cardUrl="/trilha/frontend"
+          cardUrl="/frontend"
           title="FRONTEND"
           image={categoryOneImg}
           colorHover="#6D66AD"
         />
 
         <Card
-          cardUrl="/trilha/frontend"
+          cardUrl="/frontend"
           title="FRONTEND"
           image={categoryOneImg}
           colorHover="#670606"
         />
 
         <Card
-          cardUrl="/trilha/frontend"
+          cardUrl="/frontend"
           title="FRONTEND"
           image={categoryOneImg}
           colorHover="#10141B"

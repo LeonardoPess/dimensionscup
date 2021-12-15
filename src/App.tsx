@@ -27,13 +27,13 @@ export function App() {
           <Route path="/disputas" element={<Dispute />}></Route>
           <Route path="/time" element={<Team />}></Route>
           <Route path="/perfil" element={<Profile />}></Route>
-          <Route path="/perfil/cronograma" element={<Timeline />}></Route>
+          <Route path="/cronograma" element={<Timeline />}></Route>
           <Route path="/escola" element={<School />}></Route>
           <Route path="/biblioteca" element={<Library />}></Route>
           <Route path="/trilha" element={<Trilha />}></Route>
-          <Route path="/trilha/frontend" element={<Frontend />}></Route>
-          <Route path="/trilha/frontend/reactjs" element={<Reactjs />}></Route>
-          <Route path="/trilha/frontend/reactjs/origamid" element={<Origamid />}></Route>
+          <Route path="/frontend" element={<Frontend />}></Route>
+          <Route path="/reactjs" element={<Reactjs />}></Route>
+          <Route path="/origamid" element={<Origamid />}></Route>
         </Routes>
       </Router>
       <GlobalStyle />
