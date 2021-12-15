@@ -6,6 +6,7 @@ import userPhoto from '../../../assets/images/userPhoto.jpg';
 
 import { Button } from '../../Button';
 import { Score } from '../../Score';
+import { Link } from 'react-router-dom';
 
 import { Container } from './styles';
 
@@ -44,7 +45,9 @@ export function AsideProfile() {
 
       <button>TRILHA ATUAL: ReactJS</button>
       <button>CURSO ATUAL: Rocketseat</button>
-      <button>CRONOGRAMA</button>
+      <Link to="/perfil/cronograma">
+        <button>CRONOGRAMA</button>
+      </Link>
       <p>Início na trilha:<span>12/12/2021</span></p>
       <p>Cursos concluídas:<span>3 de 11</span></p>
       <p>Desafios<span>29 de 120</span></p>

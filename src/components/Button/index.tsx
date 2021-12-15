@@ -10,7 +10,7 @@ export function Button({ text, color, icon }: ButtonProps) {
   const colorValue = color ? color : '#3A337C';
 
   return (
-    <Container style={{background: colorValue}}>
+    <Container style={{background: colorValue}} className="button">
       {text}
       <img src={icon} alt="Button icon" />
     </Container>

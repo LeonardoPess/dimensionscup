@@ -11,6 +11,7 @@ import { Profile } from "./pages/Profile";
 import { Reactjs } from "./pages/Reactjs";
 import { School } from "./pages/School";
 import { Team } from "./pages/Team";
+import { Timeline } from "./pages/Timeline";
 import { Trilha } from "./pages/Trilha";
 
 import { GlobalStyle } from "./styles/global";
@@ -26,6 +27,7 @@ export function App() {
           <Route path="/disputas" element={<Dispute />}></Route>
           <Route path="/time" element={<Team />}></Route>
           <Route path="/perfil" element={<Profile />}></Route>
+          <Route path="/perfil/cronograma" element={<Timeline />}></Route>
           <Route path="/escola" element={<School />}></Route>
           <Route path="/biblioteca" element={<Library />}></Route>
           <Route path="/trilha" element={<Trilha />}></Route>

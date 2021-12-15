@@ -65,7 +65,7 @@ export const Container = styled.aside`
     font-family: 'Bitter', serif;
   }
 
-  button:not(:first-of-type) {
+  button:not(.button) {
     width: 100%;
 
     margin-top: 1rem;
