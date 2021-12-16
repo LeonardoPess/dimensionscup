@@ -5,7 +5,7 @@ import { Container } from './styles';
 export function Activities() {
   return (
     <Container>
-      <h1>ATIVIDADES</h1>
+      <h1>PRÁTICAS</h1>
 
       <div className="cardWrapper">
 

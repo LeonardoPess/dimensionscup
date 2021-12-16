@@ -7,7 +7,7 @@ import { Container } from './styles';
 export function Interests() {
   return (
     <Container>
-      <h1>INTERESSES</h1>
+      <h1>PRÓXIMAS MAGIAS</h1>
 
       <div className="cardWrapper">
 

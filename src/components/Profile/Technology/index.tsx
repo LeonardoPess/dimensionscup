@@ -7,7 +7,7 @@ import { Container } from './styles';
 export function Technology() {
   return (
     <Container>
-      <h1>TECNOLOGIAS</h1>
+      <h1>MAGIAS UTILIZADAS</h1>
 
       <div className="cardWrapper">
 

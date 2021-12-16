@@ -19,8 +19,8 @@ export function Notifications() {
         <h1>PEGUE SUA VARINHA, VOCÊ FOI DESAFIADO PARA UM DUELO</h1>
         <p>Você recebeu um convite para um duelo individual contra a Maria(Torneio Tribruxo) <img src={featherIcon} alt="Pena" /></p>
         <div className="buttonWrapper">
-          <Button text="RECUSAR" color="#AA8855" icon={broomIcon} />
           <Button text="DUELAR" color="#AA8855" icon={skullIcon} />
+          <Button text="RECUSAR" color="#AA8855" icon={broomIcon} />
         </div>
       </div>
     </Container>

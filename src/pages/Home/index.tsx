@@ -16,7 +16,7 @@ export function Home() {
     <>
       <Welcome style={{backgroundImage: `url(${backgroundHomeImg})`}}>
         <div className="container">
-          <h1>BEM VINDO LEONARDO</h1>
+          <h1>BEM VINDO A HOGWARTS</h1>
           <p>Um convite de boas vindas a magia de J. K Rowling. O mundo dos trouxas pode não te compreender... 
             Mais tenho certeza que junto as pessoas certas..Melhor dizendo... os bruxos... 
             Você estará no caminho da magia, e será um excelente bruxo.</p>

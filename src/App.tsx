@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Header } from "./components/Header";
 import { Dispute } from "./pages/Dispute";
+import { Forum } from "./pages/Forum";
 import { Frontend } from "./pages/Frontend";
 import { Home } from "./pages/Home";
 import { Library } from "./pages/Library";
@@ -30,6 +31,7 @@ export function App() {
           <Route path="/cronograma" element={<Timeline />}></Route>
           <Route path="/escola" element={<School />}></Route>
           <Route path="/biblioteca" element={<Library />}></Route>
+          <Route path="/forum" element={<Forum />}></Route>
           <Route path="/trilha" element={<Trilha />}></Route>
           <Route path="/frontend" element={<Frontend />}></Route>
           <Route path="/reactjs" element={<Reactjs />}></Route>

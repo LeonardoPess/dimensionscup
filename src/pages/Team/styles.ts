@@ -14,7 +14,6 @@ export const Container = styled.main`
     > div {
       min-height: calc(100vh - 95px);
       min-width: 500px;
-      max-width: 35%;
 
       margin-left: 8rem;
       padding: 2rem;
@@ -27,8 +26,15 @@ export const Container = styled.main`
       border-top: 8px solid var(--brown-500);
       background: var(--brown-700);
 
+      @media (max-width: 768px) {
+        min-width: initial;
+        width: 80%;
+
+        margin: 0 auto;
+      }
+
       .challengeNumber {
-        width: 30%;
+        width: 150px;
 
         position: relative;
 
@@ -52,6 +58,10 @@ export const Container = styled.main`
 
         font-size: 2rem;
         font-weight: bold;
+
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+        }
       }
 
       .scoreWrapper {
@@ -70,11 +80,17 @@ export const Container = styled.main`
       justify-content: center;
     }
 
+    .tableWrapper {
+      margin: 2rem auto;
+      overflow-x: auto;
+    }
+
     table {
     width: 100%;
+    min-width: 768px;
 
-    margin: 2rem auto;
     padding: 2rem;
+    margin-bottom: .5rem;
 
     background: var(--blue-500);
     border-radius: 30px;
