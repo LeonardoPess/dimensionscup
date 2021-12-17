@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Header } from "./components/Header";
+import { Diary } from "./pages/Diary";
 import { Dispute } from "./pages/Dispute";
 import { Forum } from "./pages/Forum";
 import { Frontend } from "./pages/Frontend";
@@ -31,6 +32,7 @@ export function App() {
           <Route path="/perfil" element={<Profile />}></Route>
           <Route path="/cronograma" element={<Timeline />}></Route>
           <Route path="/escola" element={<School />}></Route>
+          <Route path="/diario" element={<Diary />}></Route>
           <Route path="/biblioteca" element={<Library />}></Route>
           <Route path="/forum" element={<Forum />}></Route>
           <Route path="/tarefas" element={<Tasks />}></Route>

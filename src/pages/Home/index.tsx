@@ -1,6 +1,4 @@
-import homeButtonIcon from '../../assets/icons/934.svg';
 import skullIcon from '../../assets/icons/skull.svg';
-import backgroundHomeImg from '../../assets/images/backgroundHome.png';
 import lastestNewsImg from '../../assets/images/news.png';
 import castleImg from '../../assets/images/castle.png';
 
@@ -8,20 +6,49 @@ import { Link } from 'react-router-dom';
 
 import { Button } from "../../components/Button";
 import { CallToActionBox } from '../../components/CallToActionBox';
+import { useEffect, useState } from 'react';
 
 import { LastestNews, Welcome } from "./styles";
 
+interface ThemeInfo {
+  home: {
+    top: {
+      backgroundImage: string;
+      title: string;
+      text: string;
+      buttonText: string;
+      buttonIcon: string;
+      buttonColor: string;
+    }
+  }
+}
+
 export function Home() {
+  const [ themeInfo, setThemeInfo ] = useState<ThemeInfo>();
+
+  useEffect( () => {
+    async function fetchThemeInfo() {
+      try {
+        const response = await fetch('http://leonardo-qa.brainlegacy.com/themes/harrypotter-pt.php');
+        const data = await response.json();
+        console.log(data)
+        setThemeInfo(data);
+      } catch (e) {
+        console.error(e)
+      }
+    }
+
+    fetchThemeInfo();
+  }, [])
+
   return (
     <>
-      <Welcome style={{backgroundImage: `url(${backgroundHomeImg})`}}>
+      <Welcome style={{backgroundImage: `url(${themeInfo?.home.top.backgroundImage})`}}>
         <div className="container">
-          <h1>CONVITE PARA HOGWARTS</h1>
-          <p>Um convite de boas vindas a magia de J. K Rowling. O mundo dos trouxas pode não te compreender... 
-            Mais tenho certeza que junto as pessoas certas... Melhor dizendo... os bruxos... 
-            Você estará no caminho da magia, e será um excelente bruxo.</p>
+          <h1>{themeInfo?.home.top.title}</h1>
+          <p>{themeInfo?.home.top.text}</p>
             <Link to="escola">
-              <Button text="EMBARCAR PARA HOGWARTS" color="#3A337C" icon={homeButtonIcon}/>
+              <Button text="EMBARCAR PARA HOGWARTS" color={themeInfo?.home.top.buttonColor} icon={themeInfo?.home.top.buttonIcon}/>
             </Link>
         </div>
       </Welcome>

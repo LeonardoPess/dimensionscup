@@ -1,6 +1,7 @@
 import skullIcon from '../../../assets/icons/skull.svg';
 import hatIcon from '../../../assets/icons/hat.svg';
-import classImg from '../../../assets/images/class.png';
+import playCircleFillIcon from '../../../assets/icons/playCircleFill.svg';
+import courseImg from '../../../assets/images/class.png';
 
 import { Link } from 'react-router-dom';
 
@@ -11,7 +12,10 @@ export function Course() {
   return (
     <Container>
       <Link to="/origamid">
-        <img src={classImg} alt="Curso" />
+        <div className="imageWrapper">
+          <img src={courseImg} alt="Curso" />
+          <img src={playCircleFillIcon} alt="Start course" className="playIcon" />
+        </div>
         <h1>ORIGAMID</h1>
         <p>Neste curso você irá aprender a como utilizar o React do zero para o desenvolvimento de aplicações web reativas.</p>
         <p>Você irá aprender a criar um aplicativo web com funcionalidades parecidas de redes sociais como o Instagram.</p>

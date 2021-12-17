@@ -5,6 +5,23 @@ export const Container = styled.aside`
 
   margin: 0 auto;
 
+  .imageWrapper {
+    width: 100%;
+
+    position: relative;
+
+    .playIcon {
+      width: 100px;
+      height: 100px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+
   a {
     display: block;
     transition: .2s;

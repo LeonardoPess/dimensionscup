@@ -3,6 +3,7 @@ import classroomImg from '../../assets/images/classroom.png';
 import quadribolImg from '../../assets/images/quadribol.jpg';
 import forumImg from '../../assets/images/forum.png';
 import libraryImg from '../../assets/images/library.png';
+import diaryImg from '../../assets/images/diary.jpg';
 
 import { CallToActionBox } from '../../components/CallToActionBox';
 import { DailyChallenge } from '../../components/DailyChallenge';
@@ -28,13 +29,23 @@ export function School() {
         left={true}
       />
 
-    <CallToActionBox
+      <CallToActionBox
         callActionUrl="/tarefas"
         title="TREINAMENTO DE QUADRIBOL"
         text="Faça seu treinamento diário para pegar o  pomo de ouro e não deixar a outra casa vencer!"
         image={quadribolImg}
         textButton="QUADRIBOL"
         iconButton={skullIcon}
+      />
+
+      <CallToActionBox
+        callActionUrl="/diario"
+        title="DIARIO DE TOM RIDDLE"
+        text="Faça seu treinamento diário para pegar o  pomo de ouro e não deixar a outra casa vencer!"
+        image={diaryImg}
+        textButton="DIARIO"
+        iconButton={skullIcon}
+        left={true}
       />
 
       <CallToActionBox
@@ -46,7 +57,6 @@ export function School() {
         image={libraryImg}
         textButton="BIBLIOTECA"
         iconButton={skullIcon}
-        left={true}
       />
 
       <CallToActionBox
@@ -56,6 +66,7 @@ export function School() {
         image={forumImg}
         textButton="SALA PRECISA"
         iconButton={skullIcon}
+        left={true}
       />
     </Container>
   );
