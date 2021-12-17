@@ -87,5 +87,4 @@ export const GlobalStyle = createGlobalStyle`
 	border-radius: 30px;
 	background-color: var(--purple-300);
 }
-
 `

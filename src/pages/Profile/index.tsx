@@ -7,13 +7,17 @@ import { Portfolio } from '../../components/Profile/Portfolio';
 import { Interests } from '../../components/Profile/Interests';
 import { Technology } from '../../components/Profile/Technology';
 import { Activities } from '../../components/Profile/Activities';
+import { ExperienceProgress } from '../../components/Profile/ExperienceProgress';
 
 import { Container } from "./styles";
 
 export function Profile() {
   return (
     <Container>
-      <Title text="VOCÊ VIU ESSE BRUXO?" icon={hatIcon} />
+      <div className="profileTop">
+        <Title text="VOCÊ VIU ESSE BRUXO?" icon={hatIcon} />
+        <ExperienceProgress />
+      </div>
 
       <main>
         <AsideProfile />

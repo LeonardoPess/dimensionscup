@@ -6,10 +6,21 @@ export const Container = styled.section`
   margin: 0 auto;
   padding: 8rem 1rem;
 
-  > h1 {
-    text-align: left;
-    @media (max-width: 900px) {
-      text-align: center;
+  > .profileTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1150px) {
+      flex-direction: column;
+    }
+
+    > h1 {
+      text-align: left;
+
+      @media (max-width: 1150px) {
+        text-align: center;
+      }
     }
   }
 

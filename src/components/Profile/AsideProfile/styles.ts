@@ -2,11 +2,31 @@ import styled from 'styled-components';
 
 export const Container = styled.aside`
   padding: 1.5rem 1rem;
+  position: relative;
 
   background: var(--blue-500);
   border-radius: 10px;
 
-  .profileTop {
+  > img {
+    width: 40px;
+    height: 40px;
+
+    padding: .7rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--blue-900);
+    transition: .2s;
+
+    &:hover {
+      filter: brightness(.9);
+    }
+  }
+
+  .asideProfileTop {
     .userRounded {
       width: 200px;
       height: 200px;
@@ -52,7 +72,7 @@ export const Container = styled.aside`
     }
   }
 
-  button:first-of-type {
+  .button {
     margin: 0 auto;
     margin-top: 2rem;
   }

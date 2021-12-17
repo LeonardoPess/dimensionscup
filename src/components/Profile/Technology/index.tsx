@@ -1,4 +1,5 @@
 import reactIcon from '../../../assets/icons/react.svg';
+import pencilIcon from '../../../assets/icons/pencil.svg';
 
 import { Card } from '../Card';
 
@@ -7,6 +8,8 @@ import { Container } from './styles';
 export function Technology() {
   return (
     <Container>
+      <img src={pencilIcon} alt="edit" />
+
       <h1>MAGIAS UTILIZADAS</h1>
 
       <div className="cardWrapper">

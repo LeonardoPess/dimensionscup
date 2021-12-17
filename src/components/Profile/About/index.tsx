@@ -1,4 +1,5 @@
 import hatIcon from '../../../assets/icons/hat.svg';
+import pencilIcon from '../../../assets/icons/pencil.svg';
 
 import { Button } from '../../Button';
 
@@ -7,6 +8,8 @@ import { Container } from './styles';
 export function About() {
   return (
     <Container>
+      <img src={pencilIcon} alt="edit" />
+
       <h1>PROFECIA</h1>
 
       <p>Atualmente estou estudando React e buscando melhorar meus conhecimentos JavaScript!</p>

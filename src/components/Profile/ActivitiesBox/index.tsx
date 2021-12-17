@@ -1,3 +1,4 @@
+import tagIcon from '../../../assets/icons/tag.svg';
 import hatIcon from '../../../assets/icons/hat.svg';
 
 import { Button } from '../../Button';
@@ -7,6 +8,8 @@ import { Container } from './styles';
 export function ActivitiesBox() {
   return (
     <Container>
+      <img src={tagIcon} alt="edit" />
+
       <h1>AULA CREATE-REACT-APP</h1>
 
       <p>Aula da Trilha de ReactJS(frontend) e do curso da Rocketseat ensinando sobre o create-react-app...</p>

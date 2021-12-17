@@ -1,4 +1,5 @@
 import categoryOneImg from '../../../assets/images/categoryOne.png';
+import pencilIcon from '../../../assets/icons/pencil.svg';
 
 import { Card } from '../../../components/Card';
 
@@ -7,6 +8,8 @@ import { Container } from './styles';
 export function Portfolio() {
   return (
     <Container>
+      <img src={pencilIcon} alt="edit" />
+
       <h1>ESTOQUE DE MAGIAS</h1>
 
       <div className="cardWrapper">

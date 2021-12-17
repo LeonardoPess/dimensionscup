@@ -3,6 +3,7 @@ import lightningIcon from '../../../assets/icons/lightning.svg';
 import hatIcon from '../../../assets/icons/hat.svg';
 import reactIcon from '../../../assets/icons/react.svg';
 import userPhoto from '../../../assets/images/userPhoto.jpg';
+import pencilIcon from '../../../assets/icons/pencil.svg';
 
 import { Button } from '../../Button';
 import { Score } from '../../Score';
@@ -11,14 +12,22 @@ import { Link } from 'react-router-dom';
 import { Container } from './styles';
 
 export function AsideProfile() {
+  function scrollToTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
   return (
     <Container>
-      <div className="profileTop">
+      <img src={pencilIcon} alt="edit" />
+
+      <div className="asideProfileTop">
         <div className="userRounded"><img src={userPhoto} alt="Harry Potter" /></div>
         <h1>Harry Potter</h1>
         <span>Gryffindor</span>
         <span>BRUXO 1 | FRONTEND</span>
       </div>
+
+      <button>AVALIAÇÃO: 10/10</button>
 
       <p>Início da jornada: <span>12/12/2021</span></p>
       <p>Trilhas concluídas:<span>3 de 11</span></p>
@@ -46,7 +55,7 @@ export function AsideProfile() {
       <button>TRILHA ATUAL: ReactJS</button>
       <button>CURSO ATUAL: Rocketseat</button>
       <Link to="/cronograma">
-        <button>CRONOGRAMA</button>
+        <button onClick={scrollToTop}>CRONOGRAMA</button>
       </Link>
       <p>Início na trilha:<span>12/12/2021</span></p>
       <p>Cursos concluídas:<span>3 de 11</span></p>

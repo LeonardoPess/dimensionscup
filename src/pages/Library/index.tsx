@@ -1,4 +1,4 @@
-import libraryImg from '../../assets/pages/Library.png';
+import libraryImg from '../../assets/pages/library.png';
 
 import { Container } from "./styles";
 

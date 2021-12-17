@@ -14,7 +14,6 @@ export const Container = styled.section`
   > div {
     max-width: 1000px;
 
-    position: relative;
     padding: 2rem;
     margin: 0 2rem;
 
@@ -23,20 +22,11 @@ export const Container = styled.section`
     background: var(--brown-100);
 
     > img {
-    position: absolute;
-    top: -4rem;
+      margin: 0 .5rem;
 
-    cursor: pointer;
-    filter: invert(50%) sepia(22%) saturate(1806%) hue-rotate(348deg) brightness(95%) contrast(91%);
-
-    &:first-of-type {
-      left: 0;
+      cursor: pointer;
+      filter: invert(80%) sepia(22%) saturate(1806%) hue-rotate(348deg) brightness(95%) contrast(91%);
     }
-
-    &:last-of-type {
-      right: 0;
-    }
-  }
 
     h1 {
       color: var(--brown-700);

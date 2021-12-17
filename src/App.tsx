@@ -11,6 +11,7 @@ import { Origamid } from "./pages/Origamid";
 import { Profile } from "./pages/Profile";
 import { Reactjs } from "./pages/Reactjs";
 import { School } from "./pages/School";
+import { Tasks } from "./pages/Tasks";
 import { Team } from "./pages/Team";
 import { Timeline } from "./pages/Timeline";
 import { Trilha } from "./pages/Trilha";
@@ -32,6 +33,7 @@ export function App() {
           <Route path="/escola" element={<School />}></Route>
           <Route path="/biblioteca" element={<Library />}></Route>
           <Route path="/forum" element={<Forum />}></Route>
+          <Route path="/tarefas" element={<Tasks />}></Route>
           <Route path="/trilha" element={<Trilha />}></Route>
           <Route path="/frontend" element={<Frontend />}></Route>
           <Route path="/reactjs" element={<Reactjs />}></Route>

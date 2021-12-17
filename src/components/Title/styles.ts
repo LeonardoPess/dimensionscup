@@ -17,7 +17,7 @@ export const Container = styled.h1`
     margin-right: 1rem;
 
     @media (max-width: 768px) {
-      height: 40px;
+      height: 30px;
 
       margin-right: .5rem;
     }
